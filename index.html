@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<!--METADATOS -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="autor" content="Jesus Parra">
+		<meta name="descripcion" content="proyecto de prueba que incluye uso de bootstrap">
+		<meta name="Keywords" content="HTML, CSS, BOOTSTRAP">
+
+		<!--HOJA DE ESTILOS -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+		<!-- BOOTSTRAP -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	    <!--ICONOS DE BOOTSTRAP -->
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	    
+
+		<!-- FUENTES EXTERNAS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+		
+
+		<!--TITULO -->
+		<title>Portafolio</title>
+
+		<!--FAVICON -->
+		<link rel="icon" type="image/x-icon" href="img/icono.png">
+
+	
+	</head>
+
+	<body>
+		<!-- BARRA DE NAVEGACION -->
+
+		<nav class="navbar navbar-expand-md navbar-light">
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbar-toggler">
+		      <a class="navbar-brand" href="#">
+		      	<img src="img/icono.png" width="50" alt="logo de la pagina web">
+		      </a>
+		      <ul class="navbar-nav d-flex justify-content-center align-items-center">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#proyectos">Proyectos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link " href="#apis">Api's</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link " href="#contacto">Contacto</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+		<!-- SECCION HERO -->
+
+		<section class="hero align-items-stretch">
+			<div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+				<img class="hero-imagen-desarrollador" src="img/jesus.png" alt="Foto de perfil">
+				<h1>Hola, soy Jesús Parra</h1>
+				<h2>Desarrollador de sitios web adaptables y aplicaciones en línea.</h2>
+			</div>
+
+			<div class="hero-inferior">
+				<img class="hero-imagen img-fluid" src="img/hero-inferior.svg" alt="logos html css y javascript">
+			</div>
+		</section>
+
+
+		<!-- SOBRE MI -->
+
+		<section id="sobre-mi" class="sobre-mi seccion-oscura">
+      		<div class="contenedor">
+		        <h2 class="seccion-titulo">Conoce a Jesús Parra</h2>
+		        <p class="seccion-texto">Soy técnico superior universitario en análisis y diseño de sistemas. Tengo conocimientos en desarrollo de sitios web que incluyen el diseño e implementación de los mismos. Mi dedicación es mi mejor atributo y lo empleo en cada proyecto, a la par que continúo creciendo profesionalmente.</p>
+		    </div>
+    	</section>
+
+
+    	<!--EXPERIENCIA -->
+    	<section class="experiencia seccion-clara">
+    		<div class="container text-center">
+    			<div class="row">
+    				<!--DESAROLLO WEB-->
+    				<div class="columna col-12 col-md-4">
+    					<div>
+    					<i class="bi bi-laptop"></i>
+    					<p class="experiencia-titulo">Desarrollo web</p>
+    					</div>
+    					<p>A continuación menciono las tecnologías que actualmente manejo:</p>
+    					<div class="badge-contenedor">
+    						<span class="badge text-bg-primary">HTML</span>
+    						<span class="badge text-bg-primary">CSS</span>
+    						<span class="badge text-bg-primary">JAVASCRIPT</span>
+    						<span class="badge text-bg-primary">REACT</span>
+    					</div>
+    				</div>
+
+    				<!--APLICACIONES-->
+    				<div class="columna col-12 col-md-4">
+    					<div>
+    					<i class="bi bi-laptop"></i>
+    					<p class="experiencia-titulo">Aplicaciones web</p>
+    					</div>
+    					<p>Sitios funcionales con registro y manejo de datos.</p>
+    					<div class="badge-contenedor">
+    						<span class="badge text-bg-primary">e-comerce</span>
+    						<span class="badge text-bg-primary">bases de datos</span>
+    						<span class="badge text-bg-primary">gestores de contenido</span>
+    					</div>
+    					
+    				</div>
+    				
+    				<!--ESTUDIANTE-->
+    				<div class="columna col-12 col-md-4">
+    					<div>
+    					<i class="bi bi-laptop"></i>
+    					<p class="experiencia-titulo">Estudios</p>
+    					</div>
+    					<p>Es un orgullo mencionar las casas de estudios a quienes debo la diversificación de mis conocimientos:</p>
+    					<div class="badge-contenedor">
+    						<span class="badge text-bg-primary">UNEFA</span>
+    						<span class="badge text-bg-primary">SOYHENRY</span>
+    						<span class="badge text-bg-primary">FREECODECAMP</span>
+    					</div>
+    					
+    				</div>
+    					
+    				</div>
+    				
+    				
+    			</div>
+    			
+    		</div>
+
+
+    	</section>
+
+
+    	<!--PROYECTOS -->
+    	<section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+    		<h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+    		<h3 class="seccion-descripcion">Estos son algunos proyectos que e creado recientemente...</h3>
+    		<!-- GALERIA DE PROYECTOS -->
+    		<div class="container text-center proyectos-contenedor">
+    			<div class="row">
+    				<!-- Proyecto 1 -->
+    				<div class="col-12 col-md-6">
+    					<div class="proyecto">
+    						<img src="img/proyecto1.png" alt="proyecto1">
+    						<div class="overlay">
+    							<p>Proyecto individual del bootcamp SOYHENRY</p>
+    							<div class="icono-contenedor">
+    								<a href="https://github.com/Jeenpa" target="_blank" rel="noopener noreferrer">
+    									<i class="bi bi-github"></i>
+    								</a>
+
+    								<a href="https://google.com/" target="_blank" rel="noopener noreferrer">
+    									<i class="bi bi-laptop"></i>
+    								</a>
+    					
+    							</div>
+
+    						</div>
+    				
+    					</div>
+    			
+    				</div>
+
+    				<!-- Proyecto 2 -->
+    				<div class="col-12 col-md-6">
+    					<div class="proyecto">
+    						<img src="img/proyecto3.png" alt="proyecto2">
+    						<div class="overlay">
+    							<p>Proyecto grupal del bootcamp SOYHENRY</p>
+    							<div class="icono-contenedor">
+    								<a href="https://github.com/Jeenpa" target="_blank" rel="noopener noreferrer">
+    									<i class="bi bi-github"></i>
+    								</a>
+
+    								<a href="https://google.com/" target="_blank" rel="noopener noreferrer">
+    									<i class="bi bi-laptop"></i>
+    								</a>
+    					
+    							</div>
+
+    						</div>
+    				
+    					</div>
+    			
+    				</div>
+
+
+    			</div>
+
+    		</div>
+
+    		<a href="https://github.com/Jeenpa" target="_blank" rel="noopener noreferrer">
+    		<button type="button" class="btn btn-info">
+    			Ver mas proyectos
+    			<i class="bi bi-arrow-right-circle-fill"></i>
+    		</button>
+    		</a>
+
+    	</section>
+
+
+    	<!--APIS FUNCIONES -->
+    	<section id="apis" class="d-flex flex-column">
+    		<h2 class="seccion-titulo texto-negro">Api's</h2>
+    		<h3 class="seccion-descripcion">Estas son algunas funcionalidades que juntos podemos incorporar a tus proyectos</h3>
+    		<!-- GALERIA DE PROYECTOS -->
+    		<div class="container text-center apis-contenedor">
+    			<div class="row">
+					<!-- Apis 1 -->
+    				<div class="col-12 col-md-6 col-lg-3 cfapi">
+		    			<div class="card" style="height: 400px">
+		    				<div class="api-tarjeta">
+	  							<img src="img/inicialsesion.png" class="card-img-top" alt="...">
+	  							<div class="card-body">
+	    							<h5 class="card-title">Card title</h5>
+    								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+						 		</div>
+						 	</div>
+						</div>
+					</div>
+
+					<!-- Apis 2 -->
+    				<div class="col-12 col-md-6 col-lg-3 cfapi">
+		    			<div class="card" style="height: 400px">
+		    				<div class="api-tarjeta">
+	  							<img src="img/googlemaps.png" class="card-img-top" alt="...">
+	  							<div class="card-body">
+	    							<h5 class="card-title">Card title</h5>
+    								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+						 		</div>
+						 	</div>
+						</div>
+					</div>
+
+					<!-- Apis 3 -->
+    				<div class="col-12 col-md-6 col-lg-3 cfapi">
+		    			<div class="card" style="height: 400px">
+		    				<div class="api-tarjeta">
+	  							<img src="img/mercadopago.jpg" class="card-img-top" alt="...">
+	  							<div class="card-body">
+	    							<h5 class="card-title">Card title</h5>
+    								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+						 		</div>
+						 	</div>
+						</div>
+					</div>
+
+					<!-- Apis 4 -->
+    				<div class="col-12 col-md-6 col-lg-3 cfapi">
+		    			<div class="card" style="height: 400px">
+		    				<div class="api-tarjeta">
+	  							<img src="img/paypal.png" class="card-img-top" alt="...">
+	  							<div class="card-body">
+	    							<h5 class="card-title">Card title</h5>
+    								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+						 		</div>
+						 	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+    	</section>
+
+
+
+    	<!--CONTACTO -->
+    	<section id="contacto" class="contacto seccion-oscura">
+    		<div class="container">
+    			<div class="container text-center rectangulo d-flex justify-content-evenly">
+    				<div class="row">
+    					<div class="col-12 col-md-4 seccion-titulo">
+    						¡Hablemos!
+    					</div>
+
+    					<div class="col-12 col-md-4 descripcion">
+    						Contactame para incial tu proyecto de desarrollo web y hare que tu vision se vuelva realidad 
+    					</div>
+
+    					<div class="col-12 col-md-4">
+    						<a href="mailto: parra2089@gmail.com">
+    							<button type="button">
+    								Contacto 
+    								<i class="bi bi-envelope-check-fill"></i>
+    							</button>
+    						</a>
+    					</div>
+    					
+    				</div>
+    				
+    			</div>
+    			
+    		</div>
+    		
+    	</section>
+
+
+    	<!--FOOTER -->
+    	<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    		<img class="footer-logo" src="img/icono-blanco.svg" alt="logo de Portafolio">
+    		<p class="footer-texto text-center">Aprendo y creo todos los dias.<br>Creemos un proyecto juntos.</p>
+    		<div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+    			<a href="https://www.facebook.com/jparra94?eav=Afa-XMCNjqtmBwOuA9tCAGfeylB8vT8rODyB9lqDWirEvw3nlWA6YGcTrNEVCmWMKhQ&paipv=0" target="_blank" rel="noopener noreferrer">
+    			<i class="bi bi-facebook"></i>	
+    			</a>
+
+    			<a href="https://github.com/Jeenpa" target="_blank" rel="noopener noreferrer">
+    			<i class="bi bi-github"></i>	
+    			</a>
+
+    			<a href="https://www.linkedin.com/in/jesus-parra-05869b261/" target="_blank" rel="noopener noreferrer">
+    			<i class="bi bi-linkedin"></i>	
+    			</a>
+
+    			<a href="mailto: parra2089@gmail.com" target="_blank" rel="noopener noreferrer">
+    			<i class="bi bi-envelope"></i>	
+    			</a>
+    		</div>
+
+    		<div class="derechos-de-autor">Creado por Jesús Parra (2023) &#169;</div>
+    		
+    	</footer>
+
+
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	</body>
+</html>
