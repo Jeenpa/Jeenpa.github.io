@@ -371,6 +371,10 @@ footer {
 	text-align: center;
 }
 
+.tarjeta {
+	font-size: 80%;
+}
+
 
 
 
@@ -382,7 +386,7 @@ footer {
 	}
 
 	.overlay i {
-		font-size: 13px;
+		font-size: 10px;
 	}
 }
 
