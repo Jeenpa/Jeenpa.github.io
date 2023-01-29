@@ -42,6 +42,7 @@ h1 {
 	font-size: 2rem;
 	padding: 15px 0;
 	font-family: 'Rubik Dirt', cursive;
+	text-align: center;
 }
 
 .seccion-descripcion {
@@ -270,6 +271,7 @@ h1 {
 }
 
 .contacto .rectangulo {
+	padding: 5px;
 	margin-top: -5rem;
 	background-color: rgb(13, 110, 253);
 	border-radius: 10px;
@@ -366,6 +368,7 @@ footer {
 	font-size: 15px;
 	color: #aeaeae;
 	padding: 20px;
+	text-align: center;
 }
 
 
@@ -375,11 +378,11 @@ footer {
 
 @media screen and (max-width: 400px){
 	.overlay p {
-		font-size: 12px;
+		font-size: 7px;
 	}
 
 	.overlay i {
-		font-size: 40px;
+		font-size: 13px;
 	}
 }
 
