@@ -37,21 +37,14 @@
     animation-timing-function: linear;
 }
 
-@keyframes rotate-gear{
-    from{
-        transform: rotateZ(0deg);
-    }
-    to{
-        transform: rotateZ(360deg);
-    }
-}
-
 #navbar-toggler ul li a{
 	font-size: 1.3rem;
+	font-weight: bold;
 }
 
 
 #navbar-toggler ul li:hover a{
+	color: black;
 	transform: scale(1.2,1.2);
 }
 
@@ -220,6 +213,10 @@ h1 {
 	background-color: #fff;
 }
 /* PROYECTOS */
+.proyecto img{
+	margin-top: 30px;
+	box-shadow: 0px 1px 0px #474c4e, 1px 2px 0px #474c4e, 2px 3px 0px #474c4e, 3px 4px 0px #474c4e, 4px 5px 0px #474c4e, 5px 6px 0px #474c4e;
+}
 
 .proyectos-recientes {
 	padding: 40px;
@@ -229,7 +226,6 @@ h1 {
 .proyectos-recientes img {
 	height: 100%;
 	width: 100%;
-	padding: 10px;
 	border-radius: 10px;
 	display: block;
 	transition: all 0.2s ease;
@@ -237,7 +233,7 @@ h1 {
 
 
 .proyectos-contenedor {
-	padding-top: 60px;
+	padding-top: 10px;
 	margin-bottom: 40px;
 }
 
@@ -290,7 +286,6 @@ h1 {
 }
 
 .apis-contenedor {
-	padding-top: 60px;
 	margin-bottom: 110px;
 }
 
@@ -304,9 +299,6 @@ h1 {
     transition: all 0.2s ease;
 }
 
-.api-tarjeta {
-	height: 200px;
-}
 
 #frame{
 	width: 100%;
@@ -377,26 +369,28 @@ footer {
 	min-height: 500px;
 }
 
-.footer-logo {
-	height: 80px;
-	width: 80px;
-	margin: 10px;
+.contenedor-learn{
+	width: 60%;
 	animation-name: fromLearn;
 	animation-duration: 20s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
 
+
+.footer-logo {
+	height: 80px;
+	width: 80px;
+	margin: 10px;
+}
+
 .footer-texto {
+	display: block;
 	font-size: 1.5rem;
+	font-weight: bold;
 	padding: 20px;
 	margin-bottom: 30px;
 	font-family: 'Quicksand', sans-serif;
-	animation-name: fromLearn;
-	animation-duration: 20s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-
 }
 
 .iconos-redes-sociales a {
@@ -452,12 +446,21 @@ footer {
 	.overlay i {
 		font-size: 8px;
 	}
+
 }
 
 @media screen and (max-width: 767px) {
 	.navbar-brand {
 		display: none;
 	}
+	.footer-texto{
+		font-size: 0.9rem;
+	}
+
+	.contenedor-learn{
+		animation-duration: 10s;
+	}
+	
 }
 
 
@@ -467,24 +470,23 @@ footer {
 	}
 }
 
-@keyframes fromLearn{
-	0%{
-		transform: translate(-300px);
-	}
-	50%{
-		transform: translate(300px);
-	}
-	100%{
-		transform: translate(-300px);
-	}
+@keyframes rotate-gear{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
 }
 
-
-
-
-
-
-
-
-
-
+@keyframes fromLearn{
+	0%{
+		transform: translate(-40%);
+	}
+	50%{
+		transform: translate(40%);
+	}
+	100%{
+		transform: translate(-40%);
+	}
+}
