@@ -20,8 +20,7 @@
 
 .navbar-collapse {
 	align-items: center;
-	justify-content: space-between;
-
+	justify-content: flex-end;
 }
 
 .gear{
@@ -38,7 +37,7 @@
 }
 
 #navbar-toggler ul li a{
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 }
 
@@ -128,11 +127,23 @@ h1 {
 	height: 200px;
 	border-radius: 50%;
 	margin: 20px;
+	animation-name: presentaImg;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+
+.hero-principal h1 {
+	animation-name: presentaNombre;
+	animation-duration: 2s;
+	animation-timing-function: linear;
 }
 
 .hero-principal h2 {
 	font-size: 1.5rem;
 	color: #615151;
+	animation-name: presentaDescribe;
+	animation-duration: 3s;
+	animation-timing-function: linear;
 }
 
 
@@ -257,17 +268,14 @@ h1 {
 }
 
 
-
 .proyecto {
 	position: relative;
 }
 
 
-
 .proyecto:hover img {
 	opacity: 0.2;
 }
-
 
 
 .proyecto:hover .overlay {
@@ -289,6 +297,12 @@ h1 {
 	margin-bottom: 110px;
 }
 
+.api-tarjeta i{
+	font-size: 8rem;
+	color:#48A41E;
+	text-shadow: 1px 1px 2px black;
+	animation: myAnim 1s ease 0s infinite normal forwards;
+}
 
 .cfapi img {
 	height: 100%;
@@ -488,5 +502,45 @@ footer {
 	}
 	100%{
 		transform: translate(-40%);
+	}
+}
+
+@keyframes presentaImg {
+	from{
+		transform: translateX(-300%);
+	}
+	to{
+		transform: translateX(0%);
+	}
+}
+
+@keyframes presentaNombre {
+	from{
+		transform: translateX(300%);
+	}
+	to{
+		transform: translateX(0%);
+	}
+}
+
+@keyframes presentaDescribe {
+	from{
+		transform: translateX(-300%);
+	}
+	to{
+		transform: translateX(0%);
+	}
+}
+
+
+@keyframes myAnim {
+	0% {
+		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.20);
+		transform: scale(1);
+	}
+
+	100% {
+		text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+		transform: scale(1.1);
 	}
 }
