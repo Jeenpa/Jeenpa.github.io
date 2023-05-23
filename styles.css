@@ -301,7 +301,7 @@ h1 {
 	font-size: 8rem;
 	color:#48A41E;
 	text-shadow: 1px 1px 2px black;
-	animation: myAnim 1s ease 0s infinite normal forwards;
+	animation: myAnim 1.5s ease 0s infinite normal forwards;
 }
 
 .cfapi img {
@@ -319,6 +319,31 @@ h1 {
 	height: 200px;
 	overflow: hidden;
 
+}
+
+#frame-goo{
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+
+
+}
+
+#frame-goo div{
+	margin: 0px auto;
+	animation: myAnimacion 1.5s ease 0s infinite normal forwards;
+}
+
+#frame-google{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
 }
 
 
@@ -384,7 +409,7 @@ footer {
 }
 
 .contenedor-learn{
-	width: 60%;
+	width: 50%;
 	animation-name: fromLearn;
 	animation-duration: 20s;
 	animation-timing-function: linear;
@@ -468,7 +493,7 @@ footer {
 		display: none;
 	}
 	.footer-texto{
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 	}
 
 	.contenedor-learn{
@@ -535,12 +560,20 @@ footer {
 
 @keyframes myAnim {
 	0% {
-		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.20);
+		font-size: 7rem;
+	}
+
+	100% {
+		font-size: 8rem;
+	}
+}
+
+@keyframes myAnimacion {
+	0% {
 		transform: scale(1);
 	}
 
 	100% {
-		text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
 		transform: scale(1.1);
 	}
 }
