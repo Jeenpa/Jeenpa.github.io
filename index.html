@@ -231,8 +231,8 @@
 									<div class="g_id_signin" data-type="standard"></div>
 									<div id="g_id_onload"
 										data-client_id="764943416667-d44u470crbaghpvmm39p46f372clstgb.apps.googleusercontent.com"
-										data-callback="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"
-										onclick="onSignIn">
+										data-callback="handleCredentialResponse"
+									>
 									</div>
 									<a href="#" onclick="signOut();">Cerrar sesión</a>
 								</div>
@@ -365,7 +365,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 		<script src="https://accounts.google.com/gsi/client" async defer></script>
 		<script>
-			function onSignIn(googleUser) {
+			const handleCredentialResponse = (GoogleUser) => {
 				var profile = GoogleUser.getBasicProfile();
 				console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
 				console.log('Name: ' + profile.getName());
