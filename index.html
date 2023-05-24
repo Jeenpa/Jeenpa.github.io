@@ -238,6 +238,7 @@
 								data-callback="handleCredentialResponse">
 							</div>
 							<a href="#" onclick="signOut();">Cerrar sesión</a>
+							<div id="saludar"></div>
 						</div>
 						<div class="card-body tarjeta">
 							<h5 id="titulot" class="card-title">Inicio de sesión</h5>
@@ -404,6 +405,8 @@
 			console.log('Family Name: ' + responsePayload.family_name);
 			console.log("Image URL: " + responsePayload.picture);
 			console.log("Email: " + responsePayload.email);
+
+			document.getElementById('saludar').innerHTML = 'Bienvenido(a): ' + responsePayload.name;
 		}
 
 		function signOut() {
