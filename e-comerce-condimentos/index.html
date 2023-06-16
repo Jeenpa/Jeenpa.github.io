@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Spice and condiments</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt="menu" /></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#titulo">Inicio</a></li>
+                    <li><a href="#produc">Productos</a></li>
+                    <li><a href="#ubicanos">ubícanos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="" />
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <div id="total">Total: $0</div>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                            <a href="#" id="comprar" class="btn-comprar">Comprar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div id="titulo">
+                <img class="condi" src="images/condi1.png" alt="">
+                <h1>Aroma, sabor y color</h1>
+                <img class="mortero" src="images/mortero.png" alt="">
+            </div>
+            <p>
+                Somos un negocio de ventas de condimentos y especias que ofrece una amplia variedad de productos de alta calidad. Desde especias básicas como la canela y el comino hasta mezclas de especias personalizadas para satisfacer las necesidades culinarias únicas de cada cliente. Los productos son frescos y están disponibles en diferentes tamaños para satisfacer las necesidades de cualquier hogar o negocio.
+            </p>
+
+            <div class="botons">
+                <a href="https://www.aprecoin.es/historia-de-las-especias/" target="_blank" class="btn-1">Historia</a>
+                <a href="https://www.elle.com/es/belleza/salud-fitness/news/g722035/beneficios-y-propiedades-de-las-especias/" target="_blank" class="btn-1">Propiedades medicinales</a>
+            </div>
+
+            <div class="socials-1">
+                <img src="images/s1.svg" alt="" />
+                <img src="images/s2.svg" alt="" />
+                <img src="images/s3.svg" alt="" />
+            </div>
+
+            <a href="#lista">
+                <img class="arrow" src="images/arrow.svg" alt="" />
+            </a>
+        </div>
+    </header>
+
+    <section id="produc" class="recetas container">
+        <div class="tipo">
+            <hr>
+            <h2>Condimentos</h2>
+        </div>
+    </section>
+
+    <section class="platillos container" id="lista">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Comino 1kg</h3>
+                        <p class="precio">$12</p>
+                        <img src="images/comino.png" alt="">
+                        <p> Es una especia muy utilizada en la gastronomía como un digestivo, además de darle un olor y sabor único a los platos. Pero también son importantes de esta especia sus propiedades medicinales.</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Carmencita 1kg</h3>
+                        <p class="precio">$6</p>
+                        <img src="images/carmencita.png" alt="">
+                        <p>Colorante vegetal de grado alimentario muy utilizado en la gastronomía venezolana principalmente para dar color al arroz</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Onoto molido 1kg</h3>
+                        <p class="precio">$6</p>
+                        <img src="images/onoto.png" alt="">
+                        <p>Es una semilla utilizada como tinte o como adobo en la cocina latinoamericana.</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Ajo molido 1kg</h3>
+                        <p class="precio">$10</p>
+                        <img src="images/ajo.png" alt="">
+                        <p>Es un condimento que se deriva del ajo deshidratado y se usa en la cocina para mejorar el sabor.</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <section class="recetas container">
+        <div class="tipo">
+            <hr>
+            <h2>Especias</h2>
+        </div>
+
+    </section>
+
+    <section class="platillos container" id="lista-2">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Canela 1kg</h3>
+                        <p class="precio">$18</p>
+                        <img src="images/canela.png" alt="">
+                        <p>Parte interior de la corteza de las ramas del canelo; es muy aromática y de sabor agradable.</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Clavo de olor 1kg</h3>
+                        <p class="precio">$20</p>
+                        <img src="images/clavo.png" alt="">
+                        <p>El árbol del clavo, clavo de olor o clavero es un árbol de la familia Myrtaceae, nativo de Indonesia. Sus botones secos se denominan clavos de olor o girofles y se usan como especia en las cocinas de todo el mundo.</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Anis estrellado 1kg</h3>
+                        <p class="precio">$15</p>
+                        <img src="images/anis.png" alt="">
+                        <p>Semilla de color verdoso, forma aovada, muy aromática y de sabor agradable.</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Anis dulce 1kg</h3>
+                        <p class="precio">$18</p>
+                        <img src="images/anisdulce.png" alt="">
+                        <p>Semilla muy aromática y de sabor agradable.</p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+    <hr>
+    <section id="ubicanos">
+        <h2>Ubícanos</h2>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7849.454006201148!2d-68.71415064036375!3d10.363699466571557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1686865951008!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <hr>
+
+    <footer id="contacto" class="footer container">
+        <div class="links">
+
+            <div class="link">
+                <h3>Redes</h3>
+                <p>Síguenos en nuestras redes donde estamos activamente mostrando nuestros productos y brindándote las mejores recetas</p>
+                <div class="socials-2">
+                    <img src="images/s1.svg" alt="">
+                    <img src="images/s2.svg" alt="">
+                    <img src="images/s3.svg" alt="">
+                </div>
+            </div>
+
+            <div class="link">
+                <h3>Buzón de sugerencias</h3>
+                <form action="https://formsubmit.co/your@email.com" method="POST">
+                    <input type="text" placeholder="Nombre" class="inp" required>
+                    <input type="email" placeholder="Email" class="inp" required>
+                    <textarea class="inp" placeholder="Escriba aqui su sugerencia" required></textarea>
+                    <input class="btn-4" type="submit" value="enviar">
+                </form>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
