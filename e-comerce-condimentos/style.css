@@ -26,7 +26,8 @@ body{
 }
 
 .menu{
-    position: absolute;
+    position: fixed;
+    background-color: #252326;
     top: 0;
     left: 0;
     right: 0;
@@ -76,6 +77,16 @@ body{
     position: relative;
 }
 
+.sublogin{
+    position: relative;
+}
+
+.sublogin .login{
+    width: 30px;
+    background-color: white;
+    border-radius: 50px;
+}
+
 .submenu #carrito{
     display: none;
 }
@@ -91,6 +102,8 @@ body{
     padding: 20px;
     min-width: 400px;
     min-height: 100px;
+    max-height: 500px;
+    overflow-y: scroll;
 }
 
 table{
@@ -114,6 +127,43 @@ th, td{
     text-decoration: none;
     color: #dfdde0;
     font-weight: 800;
+}
+
+.sublogin #login{
+    display: none;
+}
+
+.sublogin:hover #login{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4e4b5076;
+    padding: 20px;
+    min-width: 400px;
+    min-height: 100px;
+}
+
+.sublogin #login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sublogin #login form label{
+    display: inline-block;
+    font-size: 1rem;
+    color: #dfdde0;
+}
+
+.sublogin #login form input[type='text'],
+.sublogin #login form input[type='email']{
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .header-content{
@@ -308,6 +358,10 @@ th, td{
     background-color: #c23b11;
 }
 
+.btn-2:active{
+    transform: scale(0.9,0.9);
+}
+
 .btn-comprar{
     display: inline-block;
     padding: 8px 15px;
@@ -321,6 +375,10 @@ th, td{
 
 .btn-comprar:hover{
     background-color: #61bc006c;
+}
+
+.btn-comprar:active{
+    transform: scale(0.9,0.9);
 }
 
 
@@ -451,6 +509,10 @@ footer{
 
     #menu:checked ~ .navbar{
         display: initial;
+    }
+
+    .sublogin:hover #login{
+        right: -600%;
     }
 
     .header-content{

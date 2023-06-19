@@ -1,3 +1,4 @@
+// configuracion de los slider
 var swiper = new Swiper('.mySwiper',{
     slidesPerView: 3,
     spaceBetween: 30,
@@ -24,7 +25,46 @@ var swiper = new Swiper('.mySwiper',{
     }
 })
 
-var contadorEgresos = 0;
+
+// Login
+const reset = document.getElementById('reset');
+const registrar = document.getElementById('registrar');
+
+function cargaUsuario(){
+    const usuario = JSON.parse(localStorage.getItem('usuario'));
+    if(usuario){
+        document.getElementById('name').value = usuario.nombre;
+        document.getElementById('email').value = usuario.email;
+        document.getElementById('phone').value = usuario.phone;
+    }
+}
+
+function registrarUsuario(e){
+    e.preventDefault();
+    const nombre = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+
+    if(nombre.length > 0 && email.length > 0 && phone.length > 0){
+        const usuario = {
+            nombre,
+            email,
+            phone
+            } 
+        localStorage.setItem('usuario', JSON.stringify(usuario));
+        alert('Se ha registrado con exito');
+        console.log(usuario);
+    }
+
+    console.log(localStorage.getItem('usuario'));
+
+}
+
+function resetUsuario(){
+    vaciarLocalStorage();
+    window.location.reload();
+}
+
 
 
 // Carrito
@@ -47,13 +87,21 @@ function cargarEventListeners() {
     comprarBtn.addEventListener('click', comprarProductos);
 
     document.addEventListener('DOMContentLoaded', leerLocalStorage);
+    document.addEventListener('DOMContentLoaded', cargaUsuario);
+
+    reset.addEventListener('click', resetUsuario);
+    registrar.addEventListener('click', registrarUsuario);
 }
 
 function comprarElemento(e) {
     e.preventDefault();
     if(e.target.classList.contains('agregar-carrito')){
-        const elemento = e.target.parentElement.parentElement;
-        leerDatosElemento(elemento);
+        if(localStorage.getItem('usuario')){
+            const elemento = e.target.parentElement.parentElement;
+            leerDatosElemento(elemento);
+        } else{
+            alert('Por favor registre su datos');
+        }
     }
 }
 
@@ -115,7 +163,7 @@ function vaciarCarrito() {
         lista.removeChild(lista.firstChild)
     }
 
-    vaciarLocalStorage();
+    localStorage.removeItem('elementos');
     calcularCuenta();
     return false;
 }
@@ -132,8 +180,9 @@ function guardarElementoLocalStorage(elemento) {
 
 function comprarProductos() {
     let elementosLS = JSON.parse(localStorage.getItem('elementos'));
-    let cliente = 'Jesus Parra';
-    let tlf = '+584245939080';
+    let cliente = JSON.parse(localStorage.getItem('usuario')).nombre;
+    let tlf = JSON.parse(localStorage.getItem('usuario')).phone;
+    let correo = JSON.parse(localStorage.getItem('usuario')).email;
     let producto = '';
     let cuenta = calcularCuenta();
     
@@ -141,6 +190,7 @@ function comprarProductos() {
         producto += `${elem.titulo}  ${elem.precio}
 `;
     }
+
 
     result = confirm('Te vamos a contactar para concretar la compra');
     result ?  
@@ -153,17 +203,17 @@ function comprarProductos() {
             body: JSON.stringify({
                 Cliente: cliente,
                 Contacto: tlf,
+                Email: correo,
                 Producto: producto,
                 Total: '$'+cuenta
             })
         })
             .then(response => response.json())
-            .then(data => console.log(data), vaciarLocalStorage(), setTimeout(() => {
+            .then(data => console.log(data), localStorage.removeItem('elementos'), setTimeout(() => {
                 window.location.reload();
               },"1000"))
             .catch(error => console.log(error))
-    : console.log('compra cancelada');    
-
+    : console.log('compra cancelada');
 
 }
 
@@ -222,7 +272,7 @@ function eliminarElementoLocalStorage(elemento) {
 }
 
 function vaciarLocalStorage() {
-    localStorage.clear();
+    localStorage.clear('elementos');
 }
 
 function calcularCuenta(){
