@@ -37,7 +37,7 @@
 }
 
 #navbar-toggler ul li a{
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	font-weight: bold;
 }
 
@@ -45,6 +45,11 @@
 #navbar-toggler ul li:hover a{
 	color: black;
 	transform: scale(1.1,1.1);
+}
+
+.navbar button,
+.navbar ul{
+	background-color: #f5f6f7;
 }
 
 
@@ -479,6 +484,9 @@ footer {
 	font-size: 80%;
 }
 
+.bgcolor{
+	background-color: #f5f6f794;
+}
 
 
 
