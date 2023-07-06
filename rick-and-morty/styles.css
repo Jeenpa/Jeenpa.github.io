@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(https://thumbs.gfycat.com/SoftEarnestGyrfalcon-max-1mb.gif);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 200px 10px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px solid #d3d7d9a8;
+	height: 70px;
+    margin: 0 auto;
+	margin-bottom: 30px;
+    padding: 40px;
+    box-sizing: border-box;
+	background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/54/51/18579ab243a14ba.jpg);
+}
+
+header h1{
+    font-family: 'Rampart One', cursiva;
+	font-size: 30px;
+	color: #0df316;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header nav ul li{
+    display: block;
+}
+
+header nav ul li a{
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#search{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#search div{
+    min-width: 200px;
+}
+
+#search #nmr{
+    width: 80px;
+    padding: 3px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+#search #btn{
+    width: 4rem;
+    background-color: green;
+    color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#main{
+    min-height: 80vh;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.card{
+    width: 220px;
+    height: 350px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card .boton{
+    width: 20px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    margin: 5px 0px;
+    font-size: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.card .img{
+    width: 100%;
+    display: flex;
+}
+
+.card .img img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card h2{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.card p{
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#footer{
+    height: 100px;
+    padding: 20px;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/54/51/18579ab243a14ba.jpg);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+#footer .iconos-redes-sociales i{
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+
+}
+
+@media (max-width: 500px){
+    body{
+        background-position: 80px 80px;
+        background-repeat-y: repeat;
+    }
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 30px;
+    }
+
+    header nav ul li a{
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
+    #search{
+        width: 100%;
+    }
+
+    #search h5{
+        font-size: 15px;
+    }
+
+}

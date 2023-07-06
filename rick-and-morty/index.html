@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rick and Morty</title>
+  
+  <!-- BOOTSTRAP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--ICONOS DE BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header id="header">
+    <h1>Rick and Morty</h1>
+    <nav>
+      <ul>
+        <li><a href="#header">Inicio</a></li>
+        <li><a href="https://jeenpa.github.io/" target="_blank">Creado por</a></li>
+        <li><a href="#footer">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+  <div id="search" class="container">
+    <h5>Puedes ver los personajes buscando un numero del 1 al 826:</h5>
+    <div>
+      <input id="nmr" type="number" value="" />
+      <button id="btn">buscar</button>
+    </div>
+  </div>
+  
+  <div id="contenedor">
+  </div>
+  </main>
+
+  <footer id="footer">
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+			<a href="https://www.facebook.com/jparra94?eav=Afa-XMCNjqtmBwOuA9tCAGfeylB8vT8rODyB9lqDWirEvw3nlWA6YGcTrNEVCmWMKhQ&paipv=0"
+				target="_blank" rel="noopener noreferrer">
+				<i class="bi bi-facebook"></i>
+			</a>
+
+			<a href="https://github.com/Jeenpa" target="_blank" rel="noopener noreferrer">
+				<i class="bi bi-github"></i>
+			</a>
+
+			<a href="https://www.linkedin.com/in/jesus-parra-05869b261/" target="_blank" rel="noopener noreferrer">
+				<i class="bi bi-linkedin"></i>
+			</a>
+
+			<a href="mailto: parra2089@gmail.com" target="_blank" rel="noopener noreferrer">
+				<i class="bi bi-envelope"></i>
+			</a>
+		</div>
+
+		<div class="derechos-de-autor">Jesús Parra (2023) &#169;</div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

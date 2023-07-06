@@ -517,6 +517,7 @@ footer {
 		height: 200px;
 	}
 
+
 }
 
 
@@ -524,6 +525,7 @@ footer {
 	img.hero-imagen.img-fluid {
     	max-width: 600px;
 	}
+
 }
 
 @keyframes rotate-gear{
