@@ -47,8 +47,7 @@
 	transform: scale(1.1,1.1);
 }
 
-.navbar button,
-.navbar ul{
+.navbar button{
 	background-color: #f5f6f7;
 }
 
@@ -485,7 +484,7 @@ footer {
 }
 
 .bgcolor{
-	background-color: #f5f6f794;
+	background-color: #f5f6f7d8;
 }
 
 
@@ -506,6 +505,14 @@ footer {
 @media screen and (max-width: 767px) {
 	.navbar-brand {
 		display: none;
+	}
+
+	.navbar ul{
+		background-color: #f5f6f7;
+	}
+
+	.bgcolor{
+		background-color: #f5f6f794;
 	}
 	
 	.seccion-texto {
