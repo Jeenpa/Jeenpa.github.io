@@ -14,7 +14,6 @@
 /* BARRA DE NAVEGACION */
 
 .navbar {
-	padding: 2rem;
 	background-color: #f5f6f7;
 }
 
@@ -38,12 +37,12 @@
 
 #navbar-toggler ul li a{
 	font-size: 1.1rem;
+	color: #1b1b32;
 	font-weight: bold;
 }
 
 
 #navbar-toggler ul li:hover a{
-	color: black;
 	transform: scale(1.1,1.1);
 }
 
@@ -75,10 +74,11 @@ h1 {
    url(img/teclado.avif); 
    background-size: cover;
 	color: white;
+	background-size: cover;
+	background-position: center;
 }
 
-.seccion-clara,
-#apis{
+.seccion-clara{
 	color: black;
 	background-image: url(img/pattern.png);
 }
@@ -108,7 +108,7 @@ h1 {
 }
 
 .texto-negro {
-	color: black;
+	color: #1b1b32;
 }
 
 .texto-blanco {
