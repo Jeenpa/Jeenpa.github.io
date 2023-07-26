@@ -21,6 +21,12 @@ $(document).ready(function(){
 });
 
 
+// Evento para que al hacer click en los enlaces del menu se collapse el div que los contiene (movil)
+document.addEventListener('click', (e)=>{
+    if(!e.target.matches('.navbar a')) return false;
+    document.getElementById('navbar-toggler').classList.remove('show');
+});
+
 
 function decodeJwtResponse(token) {
     let base64Url = token.split('.')[1]
@@ -49,7 +55,7 @@ window.handleCredentialResponse = (response) => {
 
 function signOut() {
     var auth2 = gapi.client.getAuthInstance();
-    auth2.signOut().then(function () {
+    auth2.signOut().then(function() {
         console.log('User signed out.');
     });
 }
