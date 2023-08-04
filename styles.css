@@ -15,6 +15,11 @@
 
 .navbar {
 	background-color: #f5f6f7;
+	height: 80px;
+}
+
+.navbar .container-fluid{
+	height: 70px;
 }
 
 .navbar-collapse {
@@ -27,10 +32,9 @@
 	font-family: WebSymbolsRegular;
 	color: #1b1b32;
     font-size: 50px;
-    margin-top: 8px;
     margin-right: 10px;
     animation-name: rotate-gear;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -67,15 +71,10 @@ h1 {
 }
 
 .seccion-oscura {
-	background-image: linear-gradient(
-		#1b1b3270, 
-		#1b1b3270
-	  ),
-   url(img/teclado.avif); 
-   background-size: cover;
-	color: white;
+	background-image: linear-gradient(#1b1b3270,#1b1b3270), url(img/teclado.avif); 
 	background-size: cover;
 	background-position: center;
+	color: white;
 }
 
 .seccion-clara{
@@ -232,6 +231,8 @@ h1 {
 .experiencia .columna{
 	background-color: #fff;
 }
+
+
 /* PROYECTOS */
 
 .proyectos-recientes {
@@ -484,7 +485,7 @@ footer {
 }
 
 .bgcolor{
-	background-color: #f5f6f7d8;
+	background-color: #f5f6f7ea;
 }
 
 
@@ -509,10 +510,6 @@ footer {
 
 	.navbar ul{
 		background-color: #f5f6f7;
-	}
-
-	.bgcolor{
-		background-color: #f5f6f794;
 	}
 	
 	.seccion-texto {
