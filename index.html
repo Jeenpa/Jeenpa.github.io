@@ -1,461 +1,609 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <!--METADATOS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, Initial-scale=1.0" />
+    <meta name="autor" content="Jesus Parra" />
 
-<head>
-	<!--METADATOS -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, Initial-scale=1.0">
-	<meta name="autor" content="Jesus Parra">
+    <!--FAVICON -->
+    <link rel="icon" type="image/x-icon" href="img/icono.png" />
 
-	<!--FAVICON -->
-	<link rel="icon" type="image/x-icon" href="img/icono.png">
+    <!-- Primary Meta Tags -->
+    <title>Portafolio Web - Jesús Parra</title>
+    <meta name="title" content="Portafolio Web - Jesús Parra" />
+    <meta
+      name="description"
+      content="Portafolio web de Jesús Enrique Parra, desarrollador web front-end. Conoce mis proyectos, habilidades y servicios."
+    />
 
-	<!-- Primary Meta Tags -->
-	<title>Portafolio Web - Jesús Parra</title>
-	<meta name="title" content="Portafolio Web - Jesús Parra" />
-	<meta name="description"
-		content="Portafolio web de Jesús Enrique Parra, desarrollador web front-end. Conoce mis proyectos, habilidades y servicios." />
+    <!-- Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jeenpa.github.io/" />
+    <meta property="og:title" content="Portafolio Web - Jesús Parra" />
+    <meta
+      property="og:description"
+      content="Portafolio web de Jesús Enrique Parra, desarrollador web front-end. Conoce mis proyectos, habilidades y servicios."
+    />
+    <meta
+      property="og:image"
+      content="https://jeenpa.github.io/img/jesus.png"
+    />
 
-	<!-- Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://jeenpa.github.io/" />
-	<meta property="og:title" content="Portafolio Web - Jesús Parra" />
-	<meta property="og:description"
-		content="Portafolio web de Jesús Enrique Parra, desarrollador web front-end. Conoce mis proyectos, habilidades y servicios." />
-	<meta property="og:image" content="https://jeenpa.github.io/img/jesus.png" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://jeenpa.github.io/" />
+    <meta property="twitter:title" content="Portafolio Web - Jesús Parra" />
+    <meta
+      property="twitter:description"
+      content="Portafolio web de Jesús Enrique Parra, desarrollador web front-end. Conoce mis proyectos, habilidades y servicios."
+    />
+    <meta
+      property="twitter:image"
+      content="https://jeenpa.github.io/img/jesus.png"
+    />
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://jeenpa.github.io/" />
-	<meta property="twitter:title" content="Portafolio Web - Jesús Parra" />
-	<meta property="twitter:description"
-		content="Portafolio web de Jesús Enrique Parra, desarrollador web front-end. Conoce mis proyectos, habilidades y servicios." />
-	<meta property="twitter:image" content="https://jeenpa.github.io/img/jesus.png" />
+    <!--HOJA DE ESTILOS -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 
-	<!--HOJA DE ESTILOS -->
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!--ICONOS DE BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
 
-	<!-- BOOTSTRAP -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-	<!--ICONOS DE BOOTSTRAP -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- FUENTES EXTERNAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<!-- FUENTES EXTERNAS -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <body>
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" id="menu">
+      <div class="container-fluid">
+        <span class="gear">S</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-</head>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#integracion">Integración</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body>
-	<!-- BARRA DE NAVEGACION -->
-	<nav class="navbar navbar-expand-md navbar-light sticky-top" id="menu">
-		<div class="container-fluid">
-			<span class="gear">S</span>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-				aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span> </button>
+    <!-- SECCION HERO -->
+    <section class="hero align-items-stretch">
+      <div
+        class="hero-principal d-flex flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="hero-imagen-desarrollador"
+          src="img/jesus.png"
+          alt="Foto de perfil"
+        />
+        <h1>Hola, soy Jesús Parra</h1>
+        <h2>Desarrollador de sitios web adaptables y aplicaciones en línea.</h2>
+      </div>
 
-			<div class="collapse navbar-collapse" id="navbar-toggler">
-				<ul class="navbar-nav d-flex justify-content-center align-items-center">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#sobre-mi">Sobre mi</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#proyectos">Proyectos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link " href="#integracion">Integración</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link " href="#contacto">Contacto</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+      <div class="hero-inferior">
+        <img
+          class="hero-imagen img-fluid"
+          src="img/hero-inferior.svg"
+          alt="logos html css y javascript"
+        />
+      </div>
+    </section>
 
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Jesús Parra</h2>
+        <p class="seccion-texto">
+          Soy técnico superior universitario en análisis y diseño de sistemas.
+          Tengo conocimientos en la creación de sitios web que incluyen el
+          desarrollo e implementación de los mismos. Mi dedicación es mi mejor
+          atributo y lo empleo en cada proyecto, a la par que continúo creciendo
+          profesionalmente.
+        </p>
+      </div>
+    </section>
 
-	<!-- SECCION HERO -->
-	<section class="hero align-items-stretch">
-		<div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-			<img class="hero-imagen-desarrollador" src="img/jesus.png" alt="Foto de perfil">
-			<h1>Hola, soy Jesús Parra</h1>
-			<h2>Desarrollador de sitios web adaptables y aplicaciones en línea.</h2>
-		</div>
+    <!--EXPERIENCIA -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!--DESAROLLO WEB-->
+          <div class="columna col-12 col-md-4">
+            <div>
+              <i class="bi bi-laptop"></i>
+              <p class="experiencia-titulo">Desarrollo web</p>
+            </div>
+            <p>
+              A continuación menciono las tecnologías que actualmente manejo:
+            </p>
+            <div class="badge-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JAVASCRIPT</span>
+              <span class="badge text-bg-primary">REACT</span>
+            </div>
+          </div>
 
-		<div class="hero-inferior">
-			<img class="hero-imagen img-fluid" src="img/hero-inferior.svg" alt="logos html css y javascript">
-		</div>
-	</section>
+          <!--APLICACIONES-->
+          <div class="columna col-12 col-md-4">
+            <div>
+              <i class="bi bi-laptop"></i>
+              <p class="experiencia-titulo">Implementación web</p>
+            </div>
+            <p>Publicación de webs en línea:</p>
+            <div class="badge-contenedor">
+              <span class="badge text-bg-primary">HOSTING</span>
+              <span class="badge text-bg-primary">DOMINIO</span>
+            </div>
+          </div>
 
+          <!--ESTUDIANTE-->
+          <div class="columna col-12 col-md-4">
+            <div>
+              <i class="bi bi-laptop"></i>
+              <p class="experiencia-titulo">Estudios</p>
+            </div>
+            <p>Es un orgullo mencionar mis casas de estudios:</p>
+            <div class="badge-contenedor">
+              <span class="badge text-bg-primary">UNEFA</span>
+              <span class="badge text-bg-primary">FREECODECAMP</span>
+              <span class="badge text-bg-primary">GOOGLE ACTIVE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- SOBRE MI -->
-	<section id="sobre-mi" class="sobre-mi seccion-oscura">
-		<div class="contenedor">
-			<h2 class="seccion-titulo">Conoce a Jesús Parra</h2>
-			<p class="seccion-texto">Soy técnico superior universitario en análisis y diseño de sistemas. Tengo
-				conocimientos en la creación de sitios web que incluyen el desarrollo e implementación de los mismos. Mi
-				dedicación es mi mejor atributo y lo empleo en cada proyecto, a la par que continúo creciendo
-				profesionalmente.</p>
-		</div>
-	</section>
+    <!--PROYECTOS -->
+    <section
+      id="proyectos"
+      class="proyectos-recientes seccion-clara d-flex flex-column"
+    >
+      <div class="container"><hr /></div>
+      <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+      <h3 class="seccion-descripcion">
+        Estos son algunos proyectos que he creado recientemente... 
+      </h3>
+      <!-- GALERIA DE PROYECTOS -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="proyectos-wrap">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6">
+            <div class="proyecto">
+              <img
+                src="img/piedraPapelTijeras.png"
+                alt="juego piedra, papel o tijeras"
+              />
+              <div class="overlay">
+                <p>(Juego) piedra, papel o tijeras</p>
+                <div class="icono-contenedor">
+                  <a
+                    href="https://jeenpa.github.io/piedraPapelTijeras"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6">
+            <div class="proyecto">
+              <img src="img/calculadora (1).png" alt="calculadora" />
+              <div class="overlay">
+                <p>(Practica) Calculadora</p>
+                <div class="icono-contenedor">
+                  <a
+                    href="https://jeenpa.github.io/grabarBoceto"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-	<!--EXPERIENCIA -->
-	<section class="experiencia seccion-clara">
-		<div class="container text-center">
-			<div class="row">
-				<!--DESAROLLO WEB-->
-				<div class="columna col-12 col-md-4">
-					<div>
-						<i class="bi bi-laptop"></i>
-						<p class="experiencia-titulo">Desarrollo web</p>
-					</div>
-					<p>A continuación menciono las tecnologías que actualmente manejo:</p>
-					<div class="badge-contenedor">
-						<span class="badge text-bg-primary">HTML</span>
-						<span class="badge text-bg-primary">CSS</span>
-						<span class="badge text-bg-primary">JAVASCRIPT</span>
-						<span class="badge text-bg-primary">REACT</span>
-					</div>
-				</div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6">
+            <div class="proyecto">
+              <img
+                src="img/proyectoSalonDeBelleza.png"
+                alt="proyecto de salon de belleza"
+              />
+              <div class="overlay">
+                <p>(proyecto) Salón de belleza</p>
+                <div class="icono-contenedor">
+                  <a
+                    href="https://jeenpa.github.io/salonDeBelleza/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-				<!--APLICACIONES-->
-				<div class="columna col-12 col-md-4">
-					<div>
-						<i class="bi bi-laptop"></i>
-						<p class="experiencia-titulo">Implementación web</p>
-					</div>
-					<p>Publicación de webs en línea:</p>
-					<div class="badge-contenedor">
-						<span class="badge text-bg-primary">HOSTING</span>
-						<span class="badge text-bg-primary">DOMINIO</span>
-					</div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6">
+            <div class="proyecto">
+              <img
+                src="img/proyecto-condimentos.png"
+                alt="proyecto de condimentos"
+              />
+              <div class="overlay">
+                <p>(proyecto personal) E-commerce Condimentos</p>
+                <div class="icono-contenedor">
+                  <a
+                    href="https://jeenpa.github.io/e-comerce-condimentos/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-				</div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6">
+            <div class="proyecto">
+              <img
+                src="img/grabarBoceto.png"
+                alt="Herramienta para grabar boceto"
+              />
+              <div class="overlay">
+                <p>(Practica) Grabar boceto</p>
+                <div class="icono-contenedor">
+                  <a
+                    href="https://jeenpa.github.io/grabarBoceto"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-				<!--ESTUDIANTE-->
-				<div class="columna col-12 col-md-4">
-					<div>
-						<i class="bi bi-laptop"></i>
-						<p class="experiencia-titulo">Estudios</p>
-					</div>
-					<p>Es un orgullo mencionar mis casas de estudios:</p>
-					<div class="badge-contenedor">
-						<span class="badge text-bg-primary">UNEFA</span>
-						<span class="badge text-bg-primary">FREECODECAMP</span>
-						<span class="badge text-bg-primary">GOOGLE ACTIVE</span>
-					</div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6">
+            <div class="proyecto">
+              <img src="img/proyectoR&M.png" alt="proyecto de rick and morty" />
+              <div class="overlay">
+                <p>
+                  (practica) Consumo de API de los personajes Rick and Morty
+                </p>
+                <div class="icono-contenedor">
+                  <a
+                    href="https://jeenpa.github.io/rick-and-morty/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-				</div>
+          <!-- Proyecto 7 -->
+          <div class="col-12 col-md-6">
+            <div class="proyecto">
+              <img
+                src="img/calculadora2.png"
+                alt="proyecto calculadora y conversora"
+              />
+              <div class="overlay">
+                <p>(práctica) Calculadora y conversora</p>
+                <div class="icono-contenedor">
+                  <a
+                    href="https://codepen.io/Jesus-Parra/full/MWzYbXv"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-code-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-			</div>
-		</div>
+          <!-- Proyecto 7 -->
+          <div class="col-12 col-md-6">
+            <div class="proyecto">
+              <img
+                src="img/presupuesto.png"
+                alt="proyecto calculo de presupuesto"
+              />
+              <div class="overlay">
+                <p>(práctica) Aplicación para calculo de presupuesto</p>
+                <div class="icono-contenedor">
+                  <a
+                    href="https://codepen.io/Jesus-Parra/full/zYMxZxY"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-code-square"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	</section>
+      <a
+        href="https://github.com/Jeenpa"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button type="button" class="btn btn-info">
+          Ver mas proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
 
-	<!--PROYECTOS -->
-	<section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-		<div class="container"><hr></div>
-		<h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
-		<h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente... </h3>
-		<!-- GALERIA DE PROYECTOS -->
-		<div class="container text-center proyectos-contenedor">
-			<div class="proyectos-wrap">
+    <!--SECCION INTEGRACION | APIS FUNCIONES -->
+    <section id="integracion" class="seccion-clara d-flex flex-column">
+      <div class="container px-4">
+        <hr />
+        <h2 class="seccion-titulo texto-negro">Integración</h2>
+        <h3 class="seccion-descripcion">
+          Estas son algunas de las funcionalidades que juntos podemos incorporar
+          a tus proyectos
+        </h3>
+        <!-- GALERIA DE API'S -->
+        <div class="row text-center apis-contenedor">
+          <!-- Apis 1 -->
+          <div class="col-12 col-md-6 col-lg-3 mt-5 cfapi">
+            <div class="card" style="height: 400px">
+              <div id="frame-google">
+                <div class="g_id_signin" data-type="standard"></div>
+                <div
+                  id="g_id_onload"
+                  data-client_id="764943416667-d44u470crbaghpvmm39p46f372clstgb.apps.googleusercontent.com"
+                  data-callback="handleCredentialResponse"
+                ></div>
+                <a href="#" onclick="signOut();">Cerrar sesión</a>
+                <div id="saludar" class="frame-saludo"></div>
+              </div>
+              <div class="card-body tarjeta">
+                <h5 id="titulot" class="card-title">Inicio de sesión</h5>
+                <p class="card-text">
+                  Puedes usar tu cuenta de google para iniciar sesión en
+                  aplicaciones y servicios de terceros .
+                </p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+              </div>
+            </div>
+          </div>
 
-				<!-- Proyecto 1 -->
-				<div class="col-12 col-md-6">
-					<div class="proyecto">
-						<img src="img/piedraPapelTijeras.png" alt="juego piedra, papel o tijeras">
-						<div class="overlay">
-							<p>(Juego) piedra, papel o tijeras</p>
-							<div class="icono-contenedor">
-								<a href="https://jeenpa.github.io/piedraPapelTijeras" target="_blank"
-									rel="noopener noreferrer">
-									<i class="bi bi-github"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>		
+          <!-- Apis 2 -->
+          <div class="col-12 col-md-6 col-lg-3 mt-5 cfapi">
+            <div class="card" style="height: 400px">
+              <div id="frame">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62800.289345533136!2d-68.7833634117167!3d10.340437612938027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80cf3350f37fd9%3A0xda3f386ac384deb6!2sSan%20Felipe%2C%20Yaracuy!5e0!3m2!1ses!2sve!4v1684361302753!5m2!1ses!2sve"
+                  style="border: 0; width: 100%; height: 200px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+              <div class="card-body tarjeta">
+                <h5 class="card-title">Google Maps</h5>
+                <p class="card-text">
+                  Es un servicio de mapas que brinda diferentes funcionalidades
+                  tales como: marcadores, asignación de rutas, trazar sectores
+                  dentro de un mapa, entre otras.
+                </p>
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+              </div>
+            </div>
+          </div>
 
-				<!-- Proyecto 2 -->
-				<div class="col-12 col-md-6">
-					<div class="proyecto">
-						<img src="img/grabarBoceto.png" alt="Herramienta para grabar boceto">
-						<div class="overlay">
-							<p>(Practica) Grabar boceto</p>
-							<div class="icono-contenedor">
-								<a href="https://jeenpa.github.io/grabarBoceto" target="_blank"
-									rel="noopener noreferrer">
-									<i class="bi bi-github"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>	
+          <!-- Apis 3 -->
+          <div class="col-12 col-md-6 col-lg-3 mt-5 cfapi">
+            <div class="card" style="height: 400px">
+              <div class="api-tarjeta">
+                <div id="frame">
+                  <img
+                    src="img/mercadopago.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body tarjeta">
+                  <h5 class="card-title">Pasarela de pago</h5>
+                  <p class="card-text">
+                    Permite cobrar por las ventas de tu tienda en línea, sin
+                    necesidad de realizar integraciones con cada empresa emisora
+                    de tarjetas de crédito o débito.
+                  </p>
+                  <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
 
-				<!-- Proyecto 3 -->
-				<div class="col-12 col-md-6">
-					<div class="proyecto">
-						<img src="img/proyectoSalonDeBelleza.png" alt="proyecto de salon de belleza">
-						<div class="overlay">
-							<p>(proyecto) Salón de belleza</p>
-							<div class="icono-contenedor">
-								<a href="https://jeenpa.github.io/salonDeBelleza/" target="_blank"
-									rel="noopener noreferrer">
-									<i class="bi bi-github"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+          <!-- Apis 4 -->
+          <div class="col-12 col-md-6 col-lg-3 mt-5 cfapi">
+            <div class="card" style="height: 400px">
+              <div class="api-tarjeta">
+                <div id="frame">
+                  <a
+                    class=""
+                    title="Iniciar una conversación"
+                    href="https://api.whatsapp.com/send/?phone=584245939080&amp;text=Hola,+me+interesan+tus+servicios+web&amp;type=phone_number&amp;app_absent=0"
+                    target="_blank"
+                  >
+                    <i class="bi bi-whatsapp iconwhats"></i>
+                  </a>
+                </div>
+                <div class="card-body tarjeta">
+                  <h5 class="card-title">Whatsapp</h5>
+                  <p class="card-text">
+                    Es un complemento que se integra a tu sitio web, mediante el
+                    cual el usuario o cliente puede iniciar una conversación con
+                    la empresa, soporte técnico, ventas, marketing, entre otros.
+                  </p>
+                  <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<!-- Proyecto 4 -->
-				<div class="col-12 col-md-6">
-					<div class="proyecto">
-						<img src="img/proyecto-condimentos.png" alt="proyecto de condimentos">
-						<div class="overlay">
-							<p>(proyecto personal) E-commerce Condimentos</p>
-							<div class="icono-contenedor">
-								<a href="https://jeenpa.github.io/e-comerce-condimentos/" target="_blank"
-									rel="noopener noreferrer">
-									<i class="bi bi-github"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+    <!--CONTACTO -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div
+          class="container text-center rectangulo d-flex justify-content-evenly"
+        >
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">¡Hablemos!</div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para inicial tu proyecto de desarrollo web y haré que
+              tu visión se vuelva realidad
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto: parra2089@gmail.com">
+                <button type="button">
+                  Escríbeme
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<!-- Proyecto 5 -->
-				<div class="col-12 col-md-6">
-					<div class="proyecto">
-						<img src="img/proyectoR&M.png" alt="proyecto de rick and morty">
-						<div class="overlay">
-							<p>(practica) Consumo de API de los personajes Rick and Morty</p>
-							<div class="icono-contenedor">
-								<a href="https://jeenpa.github.io/rick-and-morty/" target="_blank"
-									rel="noopener noreferrer">
-									<i class="bi bi-github"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+    <!--FOOTER -->
+    <footer
+      class="seccion-oscura d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="contenedor-learn row">
+        <img
+          class="footer-logo"
+          src="img/icono-blanco.svg"
+          alt="logo de Portafolio"
+        />
+        <p class="footer-texto text-center">
+          Aprendo y creó todos los días.<br />Creemos un proyecto juntos.
+        </p>
+      </div>
 
-				<!-- Proyecto 6 -->
-				<div class="col-12 col-md-6">
-					<div class="proyecto">
-						<img src="img/calculadora2.png" alt="proyecto calculadora y conversora">
-						<div class="overlay">
-							<p>(práctica) Calculadora y conversora</p>
-							<div class="icono-contenedor">
-								<a href="https://codepen.io/Jesus-Parra/full/MWzYbXv" target="_blank"
-									rel="noopener noreferrer">
-									<i class="bi bi-code-square"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+      <div
+        class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <a
+          href="https://www.facebook.com/jparra94?eav=Afa-XMCNjqtmBwOuA9tCAGfeylB8vT8rODyB9lqDWirEvw3nlWA6YGcTrNEVCmWMKhQ&paipv=0"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-facebook"></i>
+        </a>
 
-				<!-- Proyecto 7 -->
-				<div class="col-12 col-md-6">
-					<div class="proyecto">
-						<img src="img/presupuesto.png" alt="proyecto calculo de presupuesto">
-						<div class="overlay">
-							<p>(práctica) Aplicación para calculo de presupuesto</p>
-							<div class="icono-contenedor">
-								<a href="https://codepen.io/Jesus-Parra/full/zYMxZxY" target="_blank"
-									rel="noopener noreferrer">
-									<i class="bi bi-code-square"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+        <a
+          href="https://github.com/Jeenpa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github"></i>
+        </a>
 
-			</div>
+        <a
+          href="https://www.linkedin.com/in/jesus-parra-05869b261/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
 
-		</div>
+        <a
+          href="mailto: parra2089@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
 
-		<a href="https://github.com/Jeenpa" target="_blank" rel="noopener noreferrer">
-			<button type="button" class="btn btn-info">
-				Ver mas proyectos
-				<i class="bi bi-arrow-right-circle-fill"></i>
-			</button>
-		</a>
+      <div class="derechos-de-autor">Jesús Parra (2023) &#169;</div>
+    </footer>
 
-	</section>
-
-
-	<!--SECCION INTEGRACION | APIS FUNCIONES -->
-	<section id="integracion" class="seccion-clara d-flex flex-column">
-		<div class="container px-4">
-			<hr>
-			<h2 class="seccion-titulo texto-negro">Integración</h2>
-			<h3 class="seccion-descripcion">Estas son algunas de las funcionalidades que juntos podemos incorporar a tus
-				proyectos
-			</h3>
-			<!-- GALERIA DE API'S -->
-			<div class="row text-center apis-contenedor">
-				<!-- Apis 1 -->
-				<div class="col-12 col-md-6 col-lg-3 mt-5 cfapi">
-					<div class="card" style="height: 400px">
-						<div id="frame-google">
-							<div class="g_id_signin" data-type="standard"></div>
-							<div id="g_id_onload"
-								data-client_id="764943416667-d44u470crbaghpvmm39p46f372clstgb.apps.googleusercontent.com"
-								data-callback="handleCredentialResponse">
-							</div>
-							<a href="#" onclick="signOut();">Cerrar sesión</a>
-							<div id="saludar" class="frame-saludo"></div>
-						</div>
-						<div class="card-body tarjeta">
-							<h5 id="titulot" class="card-title">Inicio de sesión</h5>
-							<p class="card-text">Puedes usar tu cuenta de google para iniciar sesión en aplicaciones y
-								servicios de terceros .</p>
-							<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-						</div>
-					</div>
-				</div>
-
-				<!-- Apis 2 -->
-				<div class="col-12 col-md-6 col-lg-3 mt-5 cfapi">
-					<div class="card" style="height: 400px">
-						<div id="frame">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62800.289345533136!2d-68.7833634117167!3d10.340437612938027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80cf3350f37fd9%3A0xda3f386ac384deb6!2sSan%20Felipe%2C%20Yaracuy!5e0!3m2!1ses!2sve!4v1684361302753!5m2!1ses!2sve"
-								style="border:0;width:100%;height:200px;" allowfullscreen="" loading="lazy"
-								referrerpolicy="no-referrer-when-downgrade">
-							</iframe>
-						</div>
-						<div class="card-body tarjeta">
-							<h5 class="card-title">Google Maps</h5>
-							<p class="card-text">Es un servicio de mapas que brinda diferentes funcionalidades tales
-								como: marcadores, asignación de rutas, trazar sectores dentro de un mapa, entre otras.
-							</p>
-							<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-						</div>
-					</div>
-				</div>
-
-				<!-- Apis 3 -->
-				<div class="col-12 col-md-6 col-lg-3 mt-5 cfapi">
-					<div class="card" style="height: 400px">
-						<div class="api-tarjeta">
-							<div id="frame">
-								<img src="img/mercadopago.jpg" class="card-img-top" alt="...">
-							</div>
-							<div class="card-body tarjeta">
-								<h5 class="card-title">Pasarela de pago</h5>
-								<p class="card-text">Permite cobrar por las ventas de tu tienda en línea, sin necesidad
-									de realizar integraciones con cada empresa emisora de tarjetas de crédito o débito.
-								</p>
-								<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Apis 4 -->
-				<div class="col-12 col-md-6 col-lg-3 mt-5 cfapi">
-					<div class="card" style="height: 400px">
-						<div class="api-tarjeta">
-							<div id="frame">
-								<a class="" title='Iniciar una conversación'
-									href="https://api.whatsapp.com/send/?phone=584245939080&amp;text=Hola,+me+interesan+tus+servicios+web&amp;type=phone_number&amp;app_absent=0"
-									target="_blank">
-									<i class="bi bi-whatsapp iconwhats"></i>
-								</a>
-							</div>
-							<div class="card-body tarjeta">
-								<h5 class="card-title">Whatsapp</h5>
-								<p class="card-text">El botón de WhatsApp es un complemento que se integra a tu sitio
-									web, mediante el cual el usuario o cliente puede hacer clic para iniciar una
-									conversación con la empresa, soporte técnico, ventas, marketing, entre otros.</p>
-								<!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</section>
-
-
-
-	<!--CONTACTO -->
-	<section id="contacto" class="contacto seccion-oscura">
-		<div class="container">
-			<div class="container text-center rectangulo d-flex justify-content-evenly">
-				<div class="row">
-					<div class="col-12 col-md-4 seccion-titulo">
-						¡Hablemos!
-					</div>
-					<div class="col-12 col-md-4 descripcion">
-						Contáctame para inicial tu proyecto de desarrollo web y haré que tu visión se vuelva realidad
-					</div>
-					<div class="col-12 col-md-4">
-						<a href="mailto: parra2089@gmail.com">
-							<button type="button">
-								Escríbeme
-								<i class="bi bi-envelope-check-fill"></i>
-							</button>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!--FOOTER -->
-	<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
-		<div class="contenedor-learn row">
-			<img class="footer-logo" src="img/icono-blanco.svg" alt="logo de Portafolio">
-			<p class="footer-texto text-center">Aprendo y creó todos los días.<br>Creemos un proyecto juntos.</p>
-		</div>
-
-		<div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-			<a href="https://www.facebook.com/jparra94?eav=Afa-XMCNjqtmBwOuA9tCAGfeylB8vT8rODyB9lqDWirEvw3nlWA6YGcTrNEVCmWMKhQ&paipv=0"
-				target="_blank" rel="noopener noreferrer">
-				<i class="bi bi-facebook"></i>
-			</a>
-
-			<a href="https://github.com/Jeenpa" target="_blank" rel="noopener noreferrer">
-				<i class="bi bi-github"></i>
-			</a>
-
-			<a href="https://www.linkedin.com/in/jesus-parra-05869b261/" target="_blank" rel="noopener noreferrer">
-				<i class="bi bi-linkedin"></i>
-			</a>
-
-			<a href="mailto: parra2089@gmail.com" target="_blank" rel="noopener noreferrer">
-				<i class="bi bi-envelope"></i>
-			</a>
-		</div>
-
-		<div class="derechos-de-autor">Jesús Parra (2023) &#169;</div>
-
-	</footer>
-
-
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
-		integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB"
-		crossorigin="anonymous"></script>
-	<script src="index.js"></script>
-	<script src="https://accounts.google.com/gsi/client" async defer></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-		crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
