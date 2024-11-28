@@ -1,69 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piedra, papel o tijeras</title>
     <link rel="stylesheet" href="style.css">
+    <title>Tres en raya</title>
 </head>
 <body>
-    <h1 class="title">Piedra, papel o tijeras</h1>
-    <div class="container">
-        <div class="result">
-            <div class="games">
-                <div class="cpu">
-                    <img src="img/cpu.png" alt="cpu">
-                    <img id="cpu" src="img/desconocido.png" alt="desconocido">
-                </div>
-                <div class="counter">
-                    <h2 id="current">Partida actual</h2>
-                    <h3 id="count">0</h3>
-                </div>
-                <div class="user">
-                    <img src="img/usuario.png" alt="users">
-                    <img id="user" src="img/desconocido.png" alt="desconocido">
-                </div>
-            </div>
-            <div class="container-score">
-                <div class="score">
-                    <div class="score-title">
-                        <img src="img/cpu.png" alt="cpu">
-                        <h3>Puntaje</h3>
-                        <img src="img/usuario.png" alt="users">
-                    </div>
-                    <div class="numeric-score">
-                        <h3 id="computer-score">0</h3>
-                        <img src="img/linea.png" alt="linea">
-                        <h3 id="player-score">0</h3>
-                    </div>
-                </div>
-            </div>
-            <p class="author">Desarrollado por Jeenpa</p>
-        </div>
-        <div class="player">
-            <div class="buttons">
-                <button id="piedra" class="change"> 
-                    <img src="img/piedra.png" alt="piedra">
-                    Piedra
-                </button>
-                <button id="papel" class="change"> 
-                    <img src="img/papel.png" alt="papel">
-                    Papel
-                </button>
-                <button id="tijeras" class="change">
-                    <img src="img/tijeras.png" alt="tijeras">
-                    Tijeras
-                </button>
-            </div>
-            <div class="play-reset">
-                <button class="play">Jugar</button>
-                <button class="reset">Reiniciar</button>
-            </div>
-        </div>
+    <h1>Tres en raya</h1>
+    <div id="gameboard"></div>
+    <div>
+        <input type="text" id="player1" placeholder="Jugador 1 Nombre (X)">
+        <input type="text" id="player2" placeholder="Jugador 2 Nombre (O)">
+        <button id="startGame">Iniciar juego</button>
     </div>
+    <div id="result" class="result"></div>
     <script src="app.js"></script>
-    <footer>
-        
-    </footer>
 </body>
 </html>
